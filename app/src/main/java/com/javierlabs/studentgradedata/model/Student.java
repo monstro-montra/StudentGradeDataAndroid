@@ -3,31 +3,40 @@ package com.javierlabs.studentgradedata.model;
 import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 import androidx.annotation.NonNull;
 
 @Entity
 public class Student {
+
+    @PrimaryKey
+    @NonNull
+    @ColumnInfo(name = "id")
+    private long mId;
     //private variables
-    @PrimaryKey(autoGenerate = true)
+    @NonNull
     @ColumnInfo(name = "name")
     private String mName;
 
-    @NonNull
     @ColumnInfo(name = "surname")
     private String mSurname;
 
     @NonNull
     @ColumnInfo(name = "grade")
-    private String mGrade;
-
-    @NonNull
-    @ColumnInfo(name = "id")
-    private String mId;
+    private float mGrade;
 
     //constructor
+    @Ignore
     public Student(@NonNull String name){
+
         mName = name;
+    }
+
+    //second constructor
+    public Student(@NonNull long id){
+
+        mId = id;
     }
 
     //getters and setters
@@ -47,19 +56,19 @@ public class Student {
         this.mSurname = Surname;
     }
 
-    public String getGrade() {
+    public float getGrade() {
         return mGrade;
     }
 
-    public void setGrade(String Grade) {
+    public void setGrade(float Grade) {
         this.mGrade = Grade;
     }
 
-    public String getId() {
+    public long getId() {
         return mId;
     }
 
-    public void setId(String Id) {
+    public void setId(long Id) {
         this.mId = Id;
     }
 }

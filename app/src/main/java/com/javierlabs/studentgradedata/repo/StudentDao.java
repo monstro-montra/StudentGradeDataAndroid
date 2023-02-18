@@ -13,14 +13,14 @@ import java.util.List;
 
 @Dao
 public interface StudentDao {
-    @Query("SELECT * FROM Student WHERE name = :name")
-    Student getStudent(String name);
+    @Query("SELECT * FROM Student WHERE id = :id")
+    Student getStudent(long id);
 
     @Query("SELECT * FROM Student ORDER BY name COLLATE NOCASE")
     List<Student> getStudents();
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    String addStudent(Student student);
+    long addStudent(Student student);
 
     @Update
     void updateStudent(Student student);

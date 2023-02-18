@@ -13,4 +13,5 @@
     <string name="enter_the_grade">Enter the grade</string>
     <string name="enter_the_id">Enter the ID</string>
     <string name="add_edit_student">Add/Edit Student</string>
+    <string name="add_student">Add Student</string>
 </resources>

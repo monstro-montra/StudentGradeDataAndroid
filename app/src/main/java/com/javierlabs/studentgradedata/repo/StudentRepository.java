@@ -31,7 +31,8 @@ public class StudentRepository {
     private void addStarterData(){
         //add some students for testing purposes
         Student student = new Student("Alex");
-        String studentName = mStudentDao.addStudent(student);
+        student.setId(123);
+        long studentId = mStudentDao.addStudent(student);
 
         student = new Student("Lorenzo");
         mStudentDao.addStudent(student);
@@ -41,13 +42,13 @@ public class StudentRepository {
     }
 
     public void addStudent(Student student) {
-        String studentName = mStudentDao.addStudent(student);
-        student.setName(studentName);
+        long studentId = mStudentDao.addStudent(student);
+        student.setId(studentId);
     }
 
-    public Student getStudent(String studentName){
+    public Student getStudent(long studentId){
 
-        return mStudentDao.getStudent(studentName);
+        return mStudentDao.getStudent(studentId);
     }
     public List<Student> getStudents() {
 
