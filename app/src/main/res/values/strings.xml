@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">StudentGradeData</string>
+    <string name="student_name">Name</string>
+    <string name="student_surname">Surname</string>
+    <string name="student_grade">Grade</string>
+    <string name="student_id">ID</string>
+</resources>
