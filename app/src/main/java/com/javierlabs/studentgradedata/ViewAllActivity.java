@@ -47,7 +47,7 @@ public class ViewAllActivity extends AppCompatActivity {
         for(int i = 0; i < items.size(); i++){
             itemText.append(i + 1)
                     .append(". ")
-                    .append(items.get(i))
+                    .append(items.get(i).getName())
                     .append("\n");
         }
 

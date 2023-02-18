@@ -32,12 +32,14 @@ public class StudentRepository {
         //add some students for testing purposes
         Student student = new Student("Alex");
         student.setId(123);
-        long studentId = mStudentDao.addStudent(student);
+        mStudentDao.addStudent(student);
 
         student = new Student("Lorenzo");
+        student.setId(678);
         mStudentDao.addStudent(student);
 
         student = new Student("Michael");
+        student.setId(313);
         mStudentDao.addStudent(student);
     }
 
