@@ -6,4 +6,22 @@
     android:layout_height="match_parent"
     tools:context=".ViewAllActivity">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/student_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:scrollbars="vertical"
+            android:textSize="40sp"
+            tools:text="LIST" />
+
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
