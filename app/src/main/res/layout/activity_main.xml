@@ -4,7 +4,126 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="10dp"
     tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/name_text_view"
+        android:layout_width="100dp"
+        android:layout_height="50sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/student_name"
+        android:textSize="25sp"
+        android:gravity="center|start"
+        app:layout_constraintBottom_toTopOf="@+id/surname_text_view"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/name_edit_text"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/name_edit_text"
+        android:layout_width="220sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/enter_the_name"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/surname_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/name_text_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/surname_text_view"
+        android:layout_width="100dp"
+        android:layout_height="50sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/student_surname"
+        android:gravity="center|start"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/grade_text_view"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/surname_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/name_text_view" />
+
+    <EditText
+        android:id="@+id/surname_edit_text"
+        android:layout_width="220sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/enter_the_surname"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/grade_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/surname_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/name_edit_text" />
+
+    <TextView
+        android:id="@+id/grade_text_view"
+        android:layout_width="100dp"
+        android:layout_height="50sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/student_grade"
+        android:gravity="center|start"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/id_text_view"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/grade_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/surname_text_view" />
+
+    <EditText
+        android:id="@+id/grade_edit_text"
+        android:layout_width="220sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/enter_the_grade"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/id_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/grade_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/surname_edit_text" />
+
+    <TextView
+        android:id="@+id/id_text_view"
+        android:layout_width="100dp"
+        android:layout_height="50sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/student_id"
+        android:gravity="center|start"
+        android:textSize="25sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/id_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/grade_text_view" />
+
+    <EditText
+        android:id="@+id/id_edit_text"
+        android:layout_width="220sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/enter_the_id"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/id_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/grade_edit_text" />
 
 
 

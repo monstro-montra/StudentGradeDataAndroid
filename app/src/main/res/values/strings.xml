@@ -4,4 +4,12 @@
     <string name="student_surname">Surname</string>
     <string name="student_grade">Grade</string>
     <string name="student_id">ID</string>
+    <string name="add_data_button_text">Add Data</string>
+    <string name="view_all_button_text">View All</string>
+    <string name="update_button_text">Update</string>
+    <string name="delete_button_text">Delete</string>
+    <string name="enter_the_name">Enter the name</string>
+    <string name="enter_the_surname">Enter the surname</string>
+    <string name="enter_the_grade">Enter the grade</string>
+    <string name="enter_the_id">Enter the ID</string>
 </resources>
