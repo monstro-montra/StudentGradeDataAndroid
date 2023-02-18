@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">StudentGradeData</string>
+    <string name="app_name">Student Grade Data</string>
     <string name="student_name">Name</string>
     <string name="student_surname">Surname</string>
     <string name="student_grade">Grade</string>
@@ -12,4 +12,5 @@
     <string name="enter_the_surname">Enter the surname</string>
     <string name="enter_the_grade">Enter the grade</string>
     <string name="enter_the_id">Enter the ID</string>
+    <string name="add_edit_student">Add/Edit Student</string>
 </resources>
