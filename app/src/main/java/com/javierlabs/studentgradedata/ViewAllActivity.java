@@ -29,6 +29,7 @@ public class ViewAllActivity extends MenuActivity {
         mStudentListView.setAdapter(adapter);
 
 
+
     }
 
     @Override
