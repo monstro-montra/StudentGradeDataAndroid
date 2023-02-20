@@ -14,4 +14,5 @@
     <string name="enter_the_id">Enter the ID</string>
     <string name="add_edit_student">Add/Edit Student</string>
     <string name="add_student">Add Student</string>
+    <string name="trash_button">Trash Button</string>
 </resources>

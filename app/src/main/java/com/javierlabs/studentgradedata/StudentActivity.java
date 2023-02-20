@@ -1,12 +1,14 @@
 package com.javierlabs.studentgradedata;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 
-public class StudentActivity extends AppCompatActivity {
+public class StudentActivity extends MenuActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,10 +16,5 @@ public class StudentActivity extends AppCompatActivity {
         setContentView(R.layout.activity_student);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.main_menu, menu);
-        return true;
-    }
+
 }

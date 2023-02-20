@@ -13,7 +13,7 @@ import com.javierlabs.studentgradedata.viewmodel.StudentListViewModel;
 
 import java.util.List;
 
-public class ViewAllActivity extends AppCompatActivity {
+public class ViewAllActivity extends MenuActivity {
     private ScrollView mStudentListScrollView;
     private StudentListViewModel mStudentListViewModel;
     private Button mAddStudentButton;
@@ -25,14 +25,8 @@ public class ViewAllActivity extends AppCompatActivity {
         setContentView(R.layout.activity_view_all);
 
         mStudentListViewModel = new StudentListViewModel(getApplication());
-        mAddStudentButton = findViewById(R.id.add_student_button);
-        mStudentListScrollView = findViewById(R.id.student_list);
+        mStudentListScrollView = findViewById(R.id.student_scroll_view);
         mStudentListItem = findViewById(R.id.student_list_item);
-
-        mAddStudentButton.setOnClickListener(view -> {
-            Intent intent = new Intent(view.getContext(), StudentActivity.class);
-            view.getContext().startActivity(intent);
-        });
     }
 
     @Override
