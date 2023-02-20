@@ -31,15 +31,21 @@ public class StudentRepository {
     private void addStarterData(){
         //add some students for testing purposes
         Student student = new Student("Alex");
+        student.setSurname("Javier");
+        student.setGrade(97.0f);
         student.setId(123);
         mStudentDao.addStudent(student);
 
         student = new Student("Lorenzo");
         student.setId(678);
+        student.setSurname("Donatello");
+        student.setGrade(93.2f);
         mStudentDao.addStudent(student);
 
         student = new Student("Michael");
         student.setId(313);
+        student.setSurname("Angelo");
+        student.setGrade(87.6f);
         mStudentDao.addStudent(student);
     }
 

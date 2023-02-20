@@ -21,4 +21,8 @@ public class StudentListViewModel {
     public void addStudent(Student student) {
         studentRepo.addStudent(student);
     }
+
+    public void deleteStudent(Student student) {
+        studentRepo.deleteStudent(student);
+    }
 }
