@@ -2,20 +2,17 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="10dp"
-    android:layout_marginRight="10dp"
-    android:layout_marginTop="10dp"
     android:background="#FFFFFF"
-    android:orientation="horizontal" >
-
+    android:orientation="horizontal"
+    >
 
     <TextView
-        android:id="@+id/student_list_item"
+        android:id="@+id/student_list_item_text_view"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:textSize="40sp"
-    />
+        />
 
     <!--separate with empty view-->
     <View android:layout_width="0dp"
@@ -23,12 +20,16 @@
         android:layout_weight="1" />
 
     <ImageButton
-        android:layout_width="30dp"
+        android:layout_width="48dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:src="@drawable/trash"
         android:clickable="true"
         android:contentDescription="@string/trash_button"
         android:focusable="true" />
+
+
+
+
 
 </LinearLayout>

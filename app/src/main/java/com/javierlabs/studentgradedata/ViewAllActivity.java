@@ -1,11 +1,8 @@
 package com.javierlabs.studentgradedata;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
-import android.widget.ScrollView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.javierlabs.studentgradedata.model.Student;
@@ -14,10 +11,9 @@ import com.javierlabs.studentgradedata.viewmodel.StudentListViewModel;
 import java.util.List;
 
 public class ViewAllActivity extends MenuActivity {
-    private ScrollView mStudentListScrollView;
+    private ListView mStudentListView;
     private StudentListViewModel mStudentListViewModel;
     private Button mAddStudentButton;
-    private TextView mStudentListItem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +21,8 @@ public class ViewAllActivity extends MenuActivity {
         setContentView(R.layout.activity_view_all);
 
         mStudentListViewModel = new StudentListViewModel(getApplication());
-        mStudentListScrollView = findViewById(R.id.student_scroll_view);
-        mStudentListItem = findViewById(R.id.student_list_item);
+        mStudentListView = findViewById(R.id.student_list_view);
+
     }
 
     @Override
@@ -36,6 +32,7 @@ public class ViewAllActivity extends MenuActivity {
     }
 
     private void displayList() {
+        TextView mStudentListItemTextView = findViewById(R.id.student_list_item_text_view);
         StringBuffer itemText = new StringBuffer();
         List<Student> items = mStudentListViewModel.getStudents();
         for(int i = 0; i < items.size(); i++){
@@ -45,7 +42,7 @@ public class ViewAllActivity extends MenuActivity {
                     .append("\n");
         }
 
-        mStudentListItem.setText(itemText);
+        mStudentListItemTextView.setText(itemText);
     }
 
 }
